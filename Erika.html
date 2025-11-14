@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="background.css"/>
+    <link rel="stylesheet" href="Erika.css"/>
 <title>
 Min første nettside
 </title>
@@ -22,97 +22,3 @@ Min første nettside
 </body>
 </html>
  
- 
-css:
- 
-:root{
-  --accent-1:#ff9a9e;
-  --accent-2:#fad0c4;
-  --accent-3:#fad0c4;
-  --text-dark:#222222;
-  --text-light:#f5f5f5;
-}
-*{
-  box-sizing:border-box;
-}
-html,body{
-  height:100%;
-  margin:0;
-  padding:0;
-}
-body {
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background: #c572c5;
-  background: linear-gradient(135deg, var(--accent-1), var(--accent-2), var(--accent-3));
-  background-size: 300% 300%;
-  animation: gradientShift 12s ease infinite;
-  font-family: "Segoe UI", Roboto, Arial, Helvetica, sans-serif;
-  color: var(--text-dark);
-  position:relative;
-  overflow:hidden;
-}
-h1 {
-    color: rgb(72, 47, 184);
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-}
-h2 {
-    color: rgb(45, 27, 123);
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-}
- 
-@keyframes gradientShift {
-  0% {
-    background-position:0% 50%;
-  }
-  50% {
-    background-position:100% 50%;
-  }
-  100% {
-    background-position:0% 50%;
-  }
-}
-a {
-    color: rgb(255, 0, 238);
-    text-decoration: none;
-    border-bottom: 1px solid rgb(255, 0, 238);
-    padding-bottom: 2px;
-}
-.container {
-  width: min(95%, 600px);
-  padding: 2rem;
-  background: rgba(255,255,255,0.1);
-  border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(10,10,10,0.25);
-  border: 1px solid rgba(255,255,255,0.12);
-  backdrop-filter: blur(6px);
-  text-align: center;
-  z-index: 2;
-  position: relative;
-}
-p {
-  color: rgba(255,255,255,0.85);
-  font-size: 1rem;
-  line-height: 1.6;
-}
-a {
-  color: white;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.5);
-  padding-bottom: 2px;
-  transition: all 0.3s ease;
-}
- 
-a:hover {
-  border-bottom-color: white;
-  opacity: 0.8;
-}
-@media (max-width: 520px) {
-  .container { padding: 1.5rem; }
-  h1 { font-size: 1.8rem; }
-  h2 { font-size: 1rem; }
-}
